@@ -8,9 +8,9 @@ GROUP BY t.title;
 SELECT t.title, AVG(s.salary)
 FROM employees e 
 INNER JOIN titles t 
-ON e.emp_no  = t.emp_no ;
+ON e.emp_no  = t.emp_no 
 INNER JOIN salaries s 
-ON e.emp_no = s.emp_no ;
+ON e.emp_no = s.emp_no 
 GROUP BY t.title;
 
 SELECT d.dept_name, SUM(s.salary)
